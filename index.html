@@ -1,119 +1,127 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
-<!-- SEO -->
-<title>Aadi Shakti Job Placement | Office Job Consultancy in Ludhiana</title>
-<meta name="description" content="MSME registered recruitment consultancy in Ludhiana providing office and professional private sector jobs. Hire staff or apply online.">
-<meta name="keywords" content="office jobs ludhiana, recruitment consultancy, hire staff ludhiana, hr consultancy punjab">
-<meta name="robots" content="index, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadi Shakti Job Placement | Private Jobs Ludhiana</title>
 
-<!-- Open Graph -->
-<meta property="og:title" content="Aadi Shakti Job Placement – Office Jobs & Hiring">
-<meta property="og:description" content="Apply for office jobs or hire professional staff in Ludhiana. MSME registered consultancy.">
-<meta property="og:type" content="website">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f4f7fb;color:#222;line-height:1.7}
+/* GLOBAL */
+body{
+  margin:0;
+  font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#f4f6f8;
+  color:#1f2937;
+  line-height:1.75;
+}
+section{padding:60px 20px;}
+h1,h2,h3{margin:0}
 
 /* HERO */
 .hero{
-  min-height:100vh;
-  background:linear-gradient(120deg,#0a3d62,#1e90ff);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.hero-box{
-  background:rgba(255,255,255,0.15);
-  backdrop-filter:blur(18px);
-  padding:55px 45px;
-  border-radius:22px;
+  background:linear-gradient(135deg,#0b3c5d,#2563eb);
+  color:#fff;
   text-align:center;
-  color:#fff;
-  box-shadow:0 30px 60px rgba(0,0,0,0.35);
+  border-radius:0 0 30px 30px;
 }
-.hero h1{font-size:2.6rem;font-weight:700}
-.hero p{margin:18px 0 28px}
-
-/* BUTTON */
+.hero h1{font-size:36px;font-weight:700}
+.hero p{opacity:.95;margin-top:12px}
+.hero .btns{margin-top:30px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap}
 .btn{
-  display:inline-block;
-  padding:14px 34px;
-  background:#25d366;
-  color:#fff;
-  border-radius:40px;
-  text-decoration:none;
+  padding:14px 26px;
+  border-radius:30px;
   font-weight:600;
-  margin:8px;
+  text-decoration:none;
+  display:inline-block;
 }
+.btn.green{background:#22c55e;color:#fff}
+.btn.white{background:#fff;color:#0b3c5d}
 
 /* SECTIONS */
-.section{padding:80px 20px}
-.section.dark{background:#0a3d62;color:#fff}
-.section h2{text-align:center;margin-bottom:40px;font-size:2.1rem}
+.container{max-width:1100px;margin:auto}
+.section-title{
+  font-size:28px;
+  font-weight:600;
+  text-align:center;
+  margin-bottom:40px;
+}
 
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
-  max-width:1200px;
+/* HOW IT WORKS */
+.steps ol{max-width:600px;margin:auto;font-size:16px}
+.steps li{margin-bottom:10px}
+
+/* NOTICE */
+.notice{
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+  max-width:800px;
   margin:auto;
+  padding:40px;
+  text-align:center;
+}
+.notice strong{color:#0b3c5d}
+
+/* JOB CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
 }
 .card{
   background:#fff;
   padding:25px;
-  border-radius:16px;
+  border-radius:18px;
   text-align:center;
-  box-shadow:0 15px 30px rgba(0,0,0,0.15);
+  font-weight:500;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
 }
-.section.dark .card{background:rgba(255,255,255,0.15);color:#fff}
 
-/* FORM */
-form{
-  max-width:700px;
-  margin:30px auto 0;
+/* CONTACT 3D */
+.contact-3d{
+  background:#f8fafc;
+  text-align:center;
+}
+.contact-cards{
   display:grid;
-  gap:12px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  max-width:1100px;
+  margin:auto;
 }
-input,select,textarea,button{
-  padding:12px;
-  border-radius:10px;
-  border:1px solid #ccc;
+.contact-card{
+  background:#fff;
+  padding:30px 20px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
 }
-textarea{resize:none}
-button{background:#25d366;color:#fff;font-weight:700;cursor:pointer}
+.contact-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+.contact-card span{font-size:34px}
+.contact-card h3{margin:15px 0;font-weight:600}
+.contact-card a{
+  display:block;
+  color:#2563eb;
+  text-decoration:none;
+  margin:5px 0;
+  font-weight:500;
+}
 
 /* FOOTER */
 footer{
-  background:#000;
-  color:#aaa;
-  text-align:center;
-  padding:30px 15px;
-  font-size:.95rem;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp{
-  position:fixed;
-  bottom:25px;
-  right:25px;
-  width:65px;
-  height:65px;
-  background:#25d366;
+  background:#0b3c5d;
   color:#fff;
-  border-radius:50%;
-  font-size:32px;
   text-align:center;
-  line-height:65px;
-  text-decoration:none;
-  box-shadow:0 10px 20px rgba(0,0,0,.35);
+  padding:25px;
+  font-size:14px;
 }
 </style>
 </head>
@@ -122,109 +130,88 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-box">
-    <h1>Aadi Shakti Job Placement</h1>
+  <h1>Aadi Shakti Job Placement</h1>
+  <p>MSME Registered Recruitment Consultancy<br>Private Sector Office & Professional Jobs – Ludhiana</p>
+  <div class="btns">
+    <a href="https://wa.me/918427019470" class="btn green">Apply for Office Jobs</a>
+    <a href="#contact" class="btn white">Hire Staff</a>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps">
+  <h2 class="section-title">How It Works</h2>
+  <ol>
+    <li>Candidate applies online</li>
+    <li>Employer shares requirement</li>
+    <li>HR shortlists profiles</li>
+    <li>Interview & placement</li>
+  </ol>
+</section>
+
+<!-- NOTICE -->
+<section>
+  <div class="notice">
+    <h2 class="section-title">Important Notice</h2>
     <p>
-      <strong>MSME Registered Recruitment Consultancy</strong><br>
-      Office & Professional Private Sector Jobs · Ludhiana
+      Aadi Shakti Job Placement provides assistance strictly for
+      <strong>private sector office and professional jobs only</strong>.
+      We are not affiliated with any government department.
     </p>
-
-    <!-- Candidate -->
-    <a href="https://forms.gle/17ebHLjBXFdETYgw5" class="btn" target="_blank">
-      Apply for Office Jobs
-    </a>
-
-    <!-- Employer -->
-    <a href="#employer" class="btn">
-      Hire Staff
-    </a>
+    <p>
+      All service charges (if applicable) are communicated clearly in advance.
+    </p>
   </div>
 </section>
 
 <!-- JOB CATEGORIES -->
-<section class="section">
-<h2>Office & Professional Job Categories</h2>
-<div class="grid">
-  <div class="card">Office Assistant</div>
-  <div class="card">Back Office Executive</div>
-  <div class="card">Receptionist / Front Desk</div>
-  <div class="card">HR Executive</div>
-  <div class="card">Accounts Executive</div>
-  <div class="card">MIS / Data Entry</div>
-  <div class="card">Customer Support Executive</div>
-  <div class="card">Business Development Executive</div>
-</div>
+<section>
+  <h2 class="section-title">Office & Professional Job Categories</h2>
+  <div class="cards">
+    <div class="card">Office Assistant</div>
+    <div class="card">Back Office Executive</div>
+    <div class="card">Receptionist / Front Desk</div>
+    <div class="card">HR Executive</div>
+    <div class="card">Accounts Executive</div>
+    <div class="card">MIS / Data Entry</div>
+  </div>
 </section>
 
-<!-- EMPLOYER FORM -->
-<section class="section dark" id="employer">
-<h2>Employer – Hire Staff</h2>
-<p style="text-align:center;max-width:800px;margin:auto">
-Share your requirement. Our HR team will contact you shortly.
-</p>
+<!-- CONTACT -->
+<section id="contact" class="contact-3d">
+  <h2 class="section-title">Contact Us</h2>
+  <div class="contact-cards">
 
-<form onsubmit="sendEmployerWhatsApp(event)">
-  <input id="cname" required placeholder="Company Name">
-  <input id="ename" required placeholder="Your Name">
-  <input id="ephone" required placeholder="Mobile Number">
-  <select id="erole">
-    <option>Required Job Role</option>
-    <option>Office Executive</option>
-    <option>HR Executive</option>
-    <option>Accountant</option>
-    <option>Customer Support</option>
-    <option>Other</option>
-  </select>
-  <textarea id="ereq" rows="3" placeholder="Requirement Details"></textarea>
-  <button>Submit Requirement</button>
-</form>
-</section>
+    <div class="contact-card">
+      <span>📞</span>
+      <h3>Call / WhatsApp</h3>
+      <a href="tel:+918427019470">84270-19470</a>
+    </div>
 
-<!-- PROCESS -->
-<section class="section">
-<h2>How It Works</h2>
-<p style="text-align:center">
-1. Candidate applies online<br>
-2. Employer shares requirement<br>
-3. HR shortlists profiles<br>
-4. Interview & placement
-</p>
-</section>
+    <div class="contact-card">
+      <span>📧</span>
+      <h3>Email</h3>
+      <a href="mailto:aadishaktiindias@gmail.com">
+        aadishaktiindias@gmail.com
+      </a>
+    </div>
 
-<!-- DISCLAIMER -->
-<section class="section">
-<h2>Important Notice</h2>
-<p style="text-align:center;max-width:900px;margin:auto">
-Aadi Shakti Job Placement provides assistance strictly for
-<strong>private sector office and professional jobs only</strong>.
-We are not affiliated with any government department.
-All service charges (if applicable) are communicated clearly in advance.
-</p>
+    <div class="contact-card">
+      <span>🌐</span>
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com/jagdambayhitech.jobplacement" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/aadishaktijobplacement" target="_blank">Instagram</a>
+      <a href="https://aadishaktijobplacement.blogspot.com/?m=1" target="_blank">Blogspot</a>
+      <a href="https://youtube.com/@aadishaktijobplacement" target="_blank">YouTube</a>
+    </div>
+
+  </div>
 </section>
 
 <footer>
-© 2026 Aadi Shakti Job Placement<br>
-Recruitment & Manpower Consultancy · Ludhiana
+  © 2026 Aadi Shakti Job Placement<br>
+  MSME Registered Recruitment & Manpower Consultancy | Ludhiana, Punjab
 </footer>
-
-<!-- FLOATING WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/918427019470" target="_blank">💬</a>
-
-<script>
-function sendEmployerWhatsApp(e){
-  e.preventDefault();
-  const msg =
-    "Employer Requirement:%0A"+
-    "Company: "+cname.value+
-    "%0AName: "+ename.value+
-    "%0APhone: "+ephone.value+
-    "%0ARole: "+erole.value+
-    "%0ADetails: "+ereq.value;
-
-  window.open("https://wa.me/918427019470?text="+msg,"_blank");
-  e.target.reset();
-}
-</script>
 
 </body>
 </html>
