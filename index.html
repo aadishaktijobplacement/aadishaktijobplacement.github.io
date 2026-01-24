@@ -1,122 +1,105 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Aadi Shakti Job Placement | Advanced 4D Experience</title>
+
+<!-- SEO -->
+<title>Aadi Shakti Job Placement | Office Job Consultancy in Ludhiana</title>
+<meta name="description" content="MSME registered recruitment consultancy in Ludhiana providing office and professional private sector jobs. Hire staff or apply online.">
+<meta name="keywords" content="office jobs ludhiana, recruitment consultancy, hire staff ludhiana, hr consultancy punjab">
+<meta name="robots" content="index, follow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MSME Registered Recruitment & Manpower Consultancy in Ludhiana with next-gen interactive experience.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Aadi Shakti Job Placement – Office Jobs & Hiring">
+<meta property="og:description" content="Apply for office jobs or hire professional staff in Ludhiana. MSME registered consultancy.">
+<meta property="og:type" content="website">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#050b14;color:#fff;overflow-x:hidden}
+body{background:#f4f7fb;color:#222;line-height:1.7}
 
-/* ===== CINEMATIC BACKGROUND ===== */
-.bg{
-  position:fixed;
-  inset:0;
-  background:
-    radial-gradient(circle at 20% 30%,#1e90ff33,transparent 40%),
-    radial-gradient(circle at 80% 70%,#0a3d6233,transparent 45%),
-    linear-gradient(120deg,#020617,#020b20);
-  z-index:-2;
-}
-.stars{
-  position:fixed;
-  inset:0;
-  background:url("https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/media/star.png");
-  opacity:.15;
-  animation: drift 60s linear infinite;
-  z-index:-1;
-}
-@keyframes drift{from{transform:translateY(0)}to{transform:translateY(-1000px)}}
-
-/* ===== HERO (4D FEEL CORE) ===== */
+/* HERO */
 .hero{
   min-height:100vh;
+  background:linear-gradient(120deg,#0a3d62,#1e90ff);
   display:flex;
   align-items:center;
   justify-content:center;
-  perspective:1400px;
 }
 .hero-box{
-  background:rgba(255,255,255,.08);
-  backdrop-filter:blur(20px);
-  padding:60px 45px;
-  border-radius:28px;
-  text-align:center;
-  box-shadow:0 40px 90px rgba(0,0,0,.6);
-  transform-style:preserve-3d;
-  transition:.4s ease;
-}
-.hero-box h1{
-  font-size:3rem;
-  font-weight:700;
-  transform:translateZ(60px);
-}
-.hero-box p{
-  margin:20px 0 30px;
-  font-size:1.1rem;
-  opacity:.9;
-  transform:translateZ(40px);
-}
-.btn{
-  display:inline-block;
-  padding:14px 38px;
-  background:#25d366;
-  border-radius:40px;
-  color:#fff;
-  text-decoration:none;
-  font-weight:600;
-  transform:translateZ(70px);
-}
-
-/* ===== SECTIONS ===== */
-.section{
-  padding:90px 20px;
-}
-.section h2{
-  text-align:center;
-  font-size:2.3rem;
-  margin-bottom:55px;
-}
-.grid{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:30px;
-}
-.card{
-  background:rgba(255,255,255,.1);
-  padding:30px;
+  background:rgba(255,255,255,0.15);
+  backdrop-filter:blur(18px);
+  padding:55px 45px;
   border-radius:22px;
   text-align:center;
-  box-shadow:0 25px 55px rgba(0,0,0,.45);
-  transform-style:preserve-3d;
-  transition:.4s;
+  color:#fff;
+  box-shadow:0 30px 60px rgba(0,0,0,0.35);
 }
-.card:hover{
-  transform:translateY(-15px) rotateX(8deg) rotateY(-8deg) scale(1.05);
-}
-.center{
-  max-width:900px;
-  margin:auto;
-  text-align:center;
-  line-height:1.8;
-  font-size:1.1rem;
+.hero h1{font-size:2.6rem;font-weight:700}
+.hero p{margin:18px 0 28px}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  padding:14px 34px;
+  background:#25d366;
+  color:#fff;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+  margin:8px;
 }
 
-/* ===== FOOTER ===== */
-footer{
+/* SECTIONS */
+.section{padding:80px 20px}
+.section.dark{background:#0a3d62;color:#fff}
+.section h2{text-align:center;margin-bottom:40px;font-size:2.1rem}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  max-width:1200px;
+  margin:auto;
+}
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:16px;
   text-align:center;
-  padding:35px 15px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+.section.dark .card{background:rgba(255,255,255,0.15);color:#fff}
+
+/* FORM */
+form{
+  max-width:700px;
+  margin:30px auto 0;
+  display:grid;
+  gap:12px;
+}
+input,select,textarea,button{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+textarea{resize:none}
+button{background:#25d366;color:#fff;font-weight:700;cursor:pointer}
+
+/* FOOTER */
+footer{
   background:#000;
   color:#aaa;
+  text-align:center;
+  padding:30px 15px;
+  font-size:.95rem;
 }
 
-/* ===== WHATSAPP ===== */
+/* WHATSAPP FLOAT */
 .whatsapp{
   position:fixed;
   bottom:25px;
@@ -130,82 +113,117 @@ footer{
   text-align:center;
   line-height:65px;
   text-decoration:none;
-  box-shadow:0 12px 25px rgba(0,0,0,.5);
+  box-shadow:0 10px 20px rgba(0,0,0,.35);
 }
 </style>
 </head>
 
 <body>
 
-<div class="bg"></div>
-<div class="stars"></div>
-
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-box" id="hero">
+  <div class="hero-box">
     <h1>Aadi Shakti Job Placement</h1>
     <p>
-      MSME (Udyam) Registered Recruitment & Manpower Consultancy<br>
-      Ludhiana, Punjab
+      <strong>MSME Registered Recruitment Consultancy</strong><br>
+      Office & Professional Private Sector Jobs · Ludhiana
     </p>
-    <a href="https://wa.me/918427019470" class="btn">WhatsApp Now</a>
+
+    <!-- Candidate -->
+    <a href="https://forms.gle/17ebHLjBXFdETYgw5" class="btn" target="_blank">
+      Apply for Office Jobs
+    </a>
+
+    <!-- Employer -->
+    <a href="#employer" class="btn">
+      Hire Staff
+    </a>
   </div>
 </section>
 
-<!-- ===== SERVICES ===== -->
+<!-- JOB CATEGORIES -->
 <section class="section">
-<h2>What We Do</h2>
+<h2>Office & Professional Job Categories</h2>
 <div class="grid">
-  <div class="card">Private Sector Job Placement</div>
-  <div class="card">Permanent & Temporary Staffing</div>
-  <div class="card">Bulk Hiring Solutions</div>
-  <div class="card">Freshers & Walk-In Support</div>
+  <div class="card">Office Assistant</div>
+  <div class="card">Back Office Executive</div>
+  <div class="card">Receptionist / Front Desk</div>
+  <div class="card">HR Executive</div>
+  <div class="card">Accounts Executive</div>
+  <div class="card">MIS / Data Entry</div>
+  <div class="card">Customer Support Executive</div>
+  <div class="card">Business Development Executive</div>
 </div>
 </section>
 
-<!-- ===== ROLES ===== -->
-<section class="section">
-<h2>Roles We Handle</h2>
-<div class="grid">
-  <div class="card">Accountant</div>
-  <div class="card">Sales & Marketing</div>
-  <div class="card">Manager / In-Charge</div>
-  <div class="card">Chef / Cook Helper</div>
-  <div class="card">Security Guard</div>
-  <div class="card">Travel Industry Staff</div>
-</div>
+<!-- EMPLOYER FORM -->
+<section class="section dark" id="employer">
+<h2>Employer – Hire Staff</h2>
+<p style="text-align:center;max-width:800px;margin:auto">
+Share your requirement. Our HR team will contact you shortly.
+</p>
+
+<form onsubmit="sendEmployerWhatsApp(event)">
+  <input id="cname" required placeholder="Company Name">
+  <input id="ename" required placeholder="Your Name">
+  <input id="ephone" required placeholder="Mobile Number">
+  <select id="erole">
+    <option>Required Job Role</option>
+    <option>Office Executive</option>
+    <option>HR Executive</option>
+    <option>Accountant</option>
+    <option>Customer Support</option>
+    <option>Other</option>
+  </select>
+  <textarea id="ereq" rows="3" placeholder="Requirement Details"></textarea>
+  <button>Submit Requirement</button>
+</form>
 </section>
 
-<!-- ===== POLICY ===== -->
+<!-- PROCESS -->
 <section class="section">
-<h2>Transparency Policy</h2>
-<p class="center">
-We provide <strong>paid placement assistance</strong> strictly for private sector jobs.
-All charges (if applicable) are communicated clearly before any commitment.
+<h2>How It Works</h2>
+<p style="text-align:center">
+1. Candidate applies online<br>
+2. Employer shares requirement<br>
+3. HR shortlists profiles<br>
+4. Interview & placement
+</p>
+</section>
+
+<!-- DISCLAIMER -->
+<section class="section">
+<h2>Important Notice</h2>
+<p style="text-align:center;max-width:900px;margin:auto">
+Aadi Shakti Job Placement provides assistance strictly for
+<strong>private sector office and professional jobs only</strong>.
+We are not affiliated with any government department.
+All service charges (if applicable) are communicated clearly in advance.
 </p>
 </section>
 
 <footer>
 © 2026 Aadi Shakti Job Placement<br>
-MSME Registered Recruitment & Manpower Consultancy
+Recruitment & Manpower Consultancy · Ludhiana
 </footer>
 
+<!-- FLOATING WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/918427019470" target="_blank">💬</a>
 
 <script>
-/* ===== 4D FEEL ENGINE ===== */
-const hero=document.getElementById("hero");
-document.addEventListener("mousemove",e=>{
-  const x=(window.innerWidth/2-e.clientX)/25;
-  const y=(window.innerHeight/2-e.clientY)/25;
-  hero.style.transform=`rotateX(${y}deg) rotateY(${-x}deg)`;
-});
+function sendEmployerWhatsApp(e){
+  e.preventDefault();
+  const msg =
+    "Employer Requirement:%0A"+
+    "Company: "+cname.value+
+    "%0AName: "+ename.value+
+    "%0APhone: "+ephone.value+
+    "%0ARole: "+erole.value+
+    "%0ADetails: "+ereq.value;
 
-/* Scroll cinematic lift */
-window.addEventListener("scroll",()=>{
-  const sc=window.scrollY;
-  hero.style.transform+=` translateZ(${sc/20}px)`;
-});
+  window.open("https://wa.me/918427019470?text="+msg,"_blank");
+  e.target.reset();
+}
 </script>
 
 </body>
